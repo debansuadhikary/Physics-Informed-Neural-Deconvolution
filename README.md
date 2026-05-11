@@ -20,7 +20,7 @@ Using the SSIM (Structural Similarity Index) and PSNR metrics against controlled
 ## Tech Stack
 * **Core:** Python, PyTorch (Neural Networks)
 * **Astrophysics:** Astropy, Numpy (FITS file parsing and tensor manipulation)
-* **Vision:** Matplotlib, Scikit-Image (Metrics and Visualization)
+* **Vision:** Matplotlib, Scikit-Image (Metrics and Visualisation)
 
 ## The Architecture
 The core model is a modified U-Net optimised for memory efficiency. Instead of standard "image enhancement," the network operates purely on normalised photon counts. The `PhysicsInformedLossRGB` class dynamically masks saturated star cores (to prevent gradient explosions) while heavily penalising the network for violating local structural similarities in the dim nebula gas.
