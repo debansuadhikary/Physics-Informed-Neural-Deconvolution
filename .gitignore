@@ -1,0 +1,17 @@
+# Ignore raw data files
+data/
+*.fits
+*.fit
+*.csv
+
+# Ignore saved AI brains (they are too large for standard GitHub)
+models/
+*.pth
+*.pt
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore OS junk
+.DS_Store
